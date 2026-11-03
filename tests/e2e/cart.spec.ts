@@ -1,5 +1,5 @@
-import { test, expect } from '../fixtures/base';
-import { CartPage } from '../pages/CartPage';
+import { test, expect } from '../../fixtures/base';
+import { CartPage } from '../../pages/CartPage';
 
 test('TC-CART-001 - Cart badge shows the right number', { tag: '@regression' }, async ({ inventoryPage, page }) => {
     // Preconditions

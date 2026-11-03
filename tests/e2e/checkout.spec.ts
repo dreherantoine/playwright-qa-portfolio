@@ -1,7 +1,7 @@
-import { test, expect } from '../fixtures/base';
-import { CartPage } from '../pages/CartPage';
-import { CheckoutPage } from '../pages/CheckoutPage';
-import { FIRST_NAME, LAST_NAME, POSTAL_CODE } from '../test-data/users';
+import { test, expect } from '../../fixtures/base';
+import { CartPage } from '../../pages/CartPage';
+import { CheckoutPage } from '../../pages/CheckoutPage';
+import { FIRST_NAME, LAST_NAME, POSTAL_CODE } from '../../test-data/users';
 
 test('TC-CHECKOUT-001 - Full purchase', { tag: '@smoke' }, async ({ inventoryPage, page }) => {
     // Preconditions
@@ -42,7 +42,6 @@ test('TC-CHECKOUT-002 - Missing first name', { tag: '@regression' }, async ({ in
 
 test('TC-CHECKOUT-003 - Total price is correct', { tag: '@regression' }, async ({ inventoryPage, page }) => {
     // Preconditions
-    // Do recommendation number 5 from Claude
     const cartPage = new CartPage(page);
     const checkoutPage = new CheckoutPage(page);
     await inventoryPage.addToCartButton('sauce-labs-backpack').click();

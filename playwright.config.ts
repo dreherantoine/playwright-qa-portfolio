@@ -45,7 +45,7 @@ export default defineConfig({
     
     {
       name: 'e2e',
-      testIgnore: '**/api/**',
+      testDir: './tests/e2e',
       use: { ...devices['Desktop Firefox'] },
     },
 
