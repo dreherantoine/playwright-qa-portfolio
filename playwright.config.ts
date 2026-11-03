@@ -44,8 +44,15 @@ export default defineConfig({
     */
     
     {
-      name: 'firefox',
+      name: 'e2e',
+      testIgnore: '**/api/**',
       use: { ...devices['Desktop Firefox'] },
+    },
+
+    {
+      name: 'api',
+      testDir: './tests/api',
+      use: { baseURL: 'https://jsonplaceholder.typicode.com' },
     },
 
     /*
