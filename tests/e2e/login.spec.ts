@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
-import { LoginPage } from '../pages/LoginPage';
-import { InventoryPage } from '../pages/InventoryPage';
-import { USERS, PASSWORD, WRONG_PASSWORD } from '../test-data/users';
+import { LoginPage } from '../../pages/LoginPage';
+import { InventoryPage } from '../../pages/InventoryPage';
+import { USERS, PASSWORD, WRONG_PASSWORD } from '../../test-data/users';
 
 test('TC-LOGIN-001 - Login with valid credentials', { tag: '@smoke' }, async ({ page }) => {
     // Preconditions

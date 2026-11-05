@@ -1,4 +1,4 @@
-import { test, expect } from '../fixtures/base';
+import { test, expect } from '../../fixtures/base';
 
 test('TC-INVENTORY-001 - Add item to cart', { tag: '@smoke' }, async ({ inventoryPage }) => {
     // Steps

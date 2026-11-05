@@ -1,2 +1,2 @@
-# saucedemo-playwright-qa
-QA automation portfolio: Playwright + TypeScript E2E and API tests on SauceDemo, with Page Object Model, smoke/regression tags and a GitHub Actions CI.
+# playwright-qa-portfolio
+QA automation portfolio: Playwright + TypeScript E2E on SauceDemo and API tests on JSONPlaceholder, with Page Object Model, smoke/regression tags and a GitHub Actions CI.
