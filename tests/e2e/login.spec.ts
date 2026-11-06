@@ -15,7 +15,7 @@ test('TC-LOGIN-001 - Login with valid credentials', { tag: '@smoke' }, async ({ 
     const inventoryPage = new InventoryPage(page);
     await expect(page).toHaveURL(/inventory/);
     await expect(inventoryPage.title).toHaveText('Products');
-    await expect(inventoryPage.items).toHaveCount(6);
+    await expect(inventoryPage.items).toHaveCount(7);
 });
 
 test('TC-LOGIN-002 - Login with wrong password', { tag: '@regression' }, async ({ page }) => {
