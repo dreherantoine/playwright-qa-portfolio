@@ -9,18 +9,18 @@ jobs:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-node@v4
+    - uses: actions/checkout@v7
+    - uses: actions/setup-node@v7
       with:
         node-version: lts/*
     - name: Install dependencies
       run: npm ci
-    - name: Install Playwright Browsers
-      run: npx playwright install --with-deps
+    - name: Install Playwright Firefox Browser
+      run: npx playwright install firefox
     - name: Run smoke tests
       run: npm run test:smoke
     - name: Run full test suite
-      run: npm run test
+      run: npm test
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
